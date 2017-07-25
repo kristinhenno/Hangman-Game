@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Spongebob Hangman</title>
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img class="kelp" src="assets/images/kelp.png"/>
+					<img class="sb8" src="assets/images/sb8.png"/>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<h1 id="start">Click any key to get started!</h1>
+					</div>
+					<div class="row">
+						<div id="wordbox">
+							<h1 id="currentword">Current Word</h1>
+							<h1 id="word"></h1>
+						</div>
+					</div>
+					<div class="row">
+						<div id="guess">
+							<form>
+								<p class="message label"></p>
+								<input class="message" placeholder=""></input>
+								<button type="button" class="btn btn-info">Guess</button>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div id="wordbox2">
+							<h3 id="guesses"># of Guesses:</h3>
+							<h3 id="lettersguessed">Letters Guessed:</h3>
+						</div>
+					</div>
+				</div>
+					<div class="col-md-3">
+						<div id="wordbox3">
+							<h3 id="wins">Wins:</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
