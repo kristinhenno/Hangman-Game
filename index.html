@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Spongebob Hangman</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<img class="kelp" src="assets/images/sb0.png"/>
-					<div id="sb">
-						<img id="sbimage" class="sb" src="assets/images/sb1.png"/>
-					</div>
-				</div>
-				<div class="col-md-5">
-					<div class="row">
-						<h1 id="start">Click any key to get started!</h1>
-					</div>
-					<div class="row">
-						<div id="wordbox">
-							<h1 id="currentword">Current Word</h1>
-							<h1 class="text-center" id="word"></h1>
-						</div>
-					</div>
-					<div class="row">
-						<div id="guess">
-							<form>
-								<p class="message label"></p>
-								<input class="message" placeholder=""></input>
-								<button type="button" class="button btn btn-info">Guess</button>
-							</form>
-						</div>
-					</div>
-					<div class="row">
-						<div id="wordbox2">
-							
-								<h3 id="guesses"># of Guesses:</h3>
-								<div id="guessnumber">
-								</div>
-							
-							
-								<h3 id="lettersguessed">Letters Guessed:</h3>
-								<div id="lettersmissed">
-								</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div id="wordbox3">
-						<h3 id="wins">Wins:</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript" src="assets/javascript/game.js"></script>
-	</body>
+
+<head>
+    <title>Spongebob Hangman</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="kelp" src="assets/images/kelp.png" />
+                <div>
+                    <img id="sbimage" class="sb display" src="">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <h1 id="start">Click guess to get started!</h1>
+                    <h1 id="gameover"></h1>
+                </div>
+                <div class="row">
+                    <div id="wordbox">
+                        <h1 id="currentword">Current Word</h1>
+                        <h1 class="text-center" id="word"></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="guess">
+                        <form id="inputform">
+                            <p class="message label"></p>
+                            <input id="testinput" class="message" placeholder=""></input>
+                            <button onclick="clickButton()" type="button" class="button btn btn-info">Guess</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="wordbox2">
+                        <h3 id="guesses"># of Guesses:</h3>
+                        <h3 id="guessnumber">8</h3>
+                        <h3 id="lettersguessed">Letters Guessed:</h3>
+                        <div id="lettersmissed">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="wordbox3">
+                    <h3 id="wins">Wins:</h3>
+                    <h3 id="numberwins">0</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
 </html>
